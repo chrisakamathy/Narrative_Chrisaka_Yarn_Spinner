@@ -49,7 +49,7 @@ Stefan: Okay.
 ===
 
 title: Waiting
-position: -24,-1255
+position: 100,-965
 ---
 Stefan: The cops are here!
     -> Oh, thank goodness!
@@ -57,7 +57,7 @@ Stefan: The cops are here!
 ===
 
 title: FightForYourLife
-position: -56,-927
+position: 37,-1326
 ---
 Stefan: Okay I'll get him from behind while you distract him, then call the cops.
     -> Okay, let's go.
