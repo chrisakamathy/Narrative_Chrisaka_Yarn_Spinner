@@ -1,22 +1,65 @@
-﻿
-title: Start
+﻿title: Start
 tags:
+position: -103,-1736
 ---
-Narrator: Oh, hello!
-    -> Hi, where am I?
-        Narrator: You're in Unity!
-            -> Oh.
-                <<jump Oh>>
-            -> How did I get here?
-                <<jump Unity>>
+Stefan: This car looks pretty decent!
+    -> I don't know... It has a smell to it.
+        <<jump Leave>>
+    -> Yeah, I really like this one.
+        <<jump Stay>>     
 ===
 
-title: Oh
+title: Leave
+position: -436,-1550
 ---
-Narrator: Yeah, fun, right?
+Stefan: Hey, how about we take a look and if you still don't like it we will leave.
+    -> Sounds good, let's take a look.
+        <<jump CantBePicky>>
+    -> No I don't have a good feeling about it.
+        <<jump DidNotSeeAnything>>
 ===
 
-title: Unity
+title: Stay
+position: 221,-1538
 ---
-Narrator: Someone read the Beginner's Guide!
+Stefan: Wait... is that blood?
+    -> We should take him down and call the cops before something goes wrong for us.
+        <<jump FightForYourLife>>
+    -> We should call the cops...
+        <<jump Waiting>>
+===
+
+title: CantBePicky
+position: -350,-1292
+---
+Stefan: Looks good so far! what do you thi-
+
+Stefan: ... is that blood? ...
+    -> Let's go now! 
+        <<jump DidNotSeeAnything>>
+    -> We need to call the cops!
+        <<jump Waiting>>
+===
+
+title: DidNotSeeAnything
+position: -393,-924
+---
+Stefan: Okay.
+    <<jump Start>>
+===
+
+title: Waiting
+position: -24,-1255
+---
+Stefan: The cops are here!
+    -> Oh, thank goodness!
+        <<jump Start>>
+===
+
+title: FightForYourLife
+position: -56,-927
+---
+Stefan: Okay I'll get him from behind while you distract him, then call the cops.
+    -> Okay, let's go.
+        <<jump Waiting>>
 ===
