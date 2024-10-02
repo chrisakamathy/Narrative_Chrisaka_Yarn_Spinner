@@ -42,7 +42,7 @@ Stefan: ... is that blood? ...
 ===
 
 title: DidNotSeeAnything
-position: -393,-924
+position: -390,-973
 ---
 Stefan: Okay.
     <<jump Start>>
